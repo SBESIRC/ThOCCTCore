@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ea83408a-596e-40bf-9349-4c79c3e71877}</ProjectGuid>
+    <ProjectGuid>{6922d0ed-12af-49c7-848c-34e40bd1ea25}</ProjectGuid>
     <RootNamespace>ThOCCTUtils</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

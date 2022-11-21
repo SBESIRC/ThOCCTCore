@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{154BF1DF-1153-42FF-A4CD-F59C915516DB}</ProjectGuid>
+    <ProjectGuid>{1489F602-4F61-4F6C-8EBC-47F135B965C7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ThOCCTUtilsNet</RootNamespace>
     <AssemblyName>ThOCCTUtilsNet</AssemblyName>

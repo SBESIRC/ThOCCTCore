@@ -20,7 +20,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{3F572EEF-72C1-4C1E-B1B7-6B3967BA41DE}</ProjectGuid>
+    <ProjectGuid>{C6E45A12-EAF5-4AF1-9203-AF15C3BB723F}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>ThOCCTUtilsMgd</RootNamespace>
