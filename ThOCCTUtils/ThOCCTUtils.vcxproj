@@ -57,6 +57,9 @@
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
+  <ImportGroup Label="Dependencies">
+    <Import Project="..\ThOCCT.props" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -124,6 +127,7 @@
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>OCCUtils\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -152,16 +156,110 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="framework.h" />
+    <ClInclude Include="OCCUtils\include\occutils\Axis.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Boolean.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Compound.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Curve.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Curves.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Direction.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Edge.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Equality.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Exceptions.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\ExtendedSTEP.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Face.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Fillet.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\IO.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Line.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\ListUtils.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Pipe.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Plane.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Point.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Primitive.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\PrintOCC.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Shape.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\ShapeComponents.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Shapes.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\STEPExport.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Surface.hxx" />
+    <ClInclude Include="OCCUtils\include\occutils\Wire.hxx" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="ThOCCTUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="OCCUtils\src\Axis.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Boolean.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Compound.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Curve.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Direction.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Edge.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Equality.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\ExtendedSTEP.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Face.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Fillet.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\IO.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Line.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Pipe.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Plane.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Point.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Primitive.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\PrintOCC.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Shape.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\ShapeComponents.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\STEPExport.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Surface.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="OCCUtils\src\Wire.cxx">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="ThOCCTUtils.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

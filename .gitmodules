@@ -1,0 +1,3 @@
+[submodule "ThOCCTUtils/OCCUtils"]
+	path = ThOCCTUtils/OCCUtils
+	url = https://github.com/ulikoehler/OCCUtils.git

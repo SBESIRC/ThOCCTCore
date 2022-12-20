@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup >
+      <ClCompile>
+          <PreprocessorDefinitions>_SILENCE_CXX17_ITERATOR_BASE_CLASS_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+          <AdditionalIncludeDirectories>$(BOOST_DIR);$(OCCT_DIR)\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+          <LanguageStandard>stdcpp17</LanguageStandard>
+      </ClCompile>
+      <Link>
+          <AdditionalLibraryDirectories>$(OCCT_DIR)\win64\vc14\lib;$(BOOST_DIR)\lib64-msvc-14.2;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+          <AdditionalDependencies>TKBO.lib;TKG2d.lib;TKG3d.lib;TKFillet.lib;TKMath.lib;TKernel.lib;TKBRep.lib;TKOffset.lib;TKIGES.lib;TKXCAF.lib;TKPrim.lib;TKSTEP.lib;TKLCAF.lib;TKXSBase.lib;TKXDESTEP.lib;TKTopAlgo.lib;TKGeomBase.lib;TKGeomAlgo.lib;TKRWMesh.lib;TKShHealing.lib;TKMesh.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
